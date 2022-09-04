@@ -5,16 +5,21 @@
 		    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
 	    <style type="text/css">
 		   body{
-		      background-color:skyblue;
+		      background-color:rgba(1,3,5,0.7);
 			  color:white;
-			  height:640px;
+			  height:600px;
 			  }
 		   h2{
 		      text-align:center;
 			  margin-top:20px;
+			  border-bottom:1px solid white;
+			  
+		   }
+		   #stub{
+		       margin-left:10px;
 		   }
 		   .container{
-		      background-color:blue;
+		      background-color:#755FF9;
 			  border:1px solid red;
 			  border-radius:5%;
 			  margin-top:30px;
@@ -26,112 +31,38 @@
         <div class="container">
 		     <div class="row"><div class="col-12"><h2>Online Result checker</h2><div></div>
 			 <div class="row m-3">
-			      <div class="col-4">Subject</div>
-				  <div class="col-4">Score</div>
-				  <div class="col-4">Grade</div>	  
+			      <div class="col">Subject</div>
+				  <div class="col">Score</div>
+				  	  
 			 </div>
 			 <div class="row mb-3 mt-3">
-			       <div class="col-4">Mathematics</div>
-				   <div class="col-4">
-				       <input type="text" oninput="
-					      var score=this.value
-						  if(score>=70){
-						      document.getElementById('matgrade').value='A'
-						  }
-						  else if(score>=60&&score<=69){ document.getElementById('matgrade').value='B'}
-						  else if(score>=50&&score<60){ document.getElementById('matgrade').value='C'}
-						  else if(score>=45&&score<50){ document.getElementById('matgrade').value='D'}
-						  else if(score>=40&&score<=45){ document.getElementById('matgrade').value='E'}
-						  else{
-						      document.getElementById('matgrade').value='F'
-						  }" 
-					  name="score" id="maths" class='getresult'>
-				   </div>
-				   <div class="col-4">
-				       <input type="text" name="grade" id="matgrade" disabled>
+			       <div class="col">Mathematics</div>
+				   <div class="col">
+				       <input type="Number"  class='getresult'>
 				   </div>
 			 </div>
 			 <div class="row mb-3 mt-3">
-			       <div class="col-4">English</div>
-				   <div class="col-4">
-				       <input type="text"  name="score" oninput="
-					   var score= this.value;
-						  if(score>=70){
-						      document.getElementById('enggrade').value='A'
-						  }
-						  else if(score>=60&&score<=69){ document.getElementById('enggrade').value='B'}
-						  else if(score>=50&&score<60){ document.getElementById('enggrade').value='C'}
-						  else if(score>=45&&score<50){ document.getElementById('enggrade').value='D'}
-						  else if(score>=40&&score<=45){ document.getElementById('enggrade').value='E'}
-						  else{
-						      document.getElementById('enggrade').value='F'
-						  }" id='eng' class='getresult'>
-				   </div>
-				   <div class="col-4">
-				       <input type="text" name="grade" id="enggrade" disabled>
+			       <div class="col">English</div>
+				   <div class="col">
+				       <input type="Number" class='getresult'>
 				   </div>
 			 </div>
 			 <div class="row mb-3 mt-3">
 			       <div class="col">Physics</div>
 				   <div class="col">
-				       <input type="text" name="score" oninput="
-					   var score= this.value;
-						  if(score>=70){
-						      document.getElementById('phgrade').value='A'
-						  }
-						  else if(score>=60&&score<=69){ document.getElementById('phgrade').value='B'}
-						  else if(score>=50&&score<60){ document.getElementById('phgrade').value='C'}
-						  else if(score>=45&&score<50){ document.getElementById('phgrade').value='D'}
-						  else if(score>=40&&score<=45){ document.getElementById('phgrade').value='E'}
-						  else{
-						      document.getElementById('phgrade').value='F'
-						  }" class='getresult'>
-				   </div>
-				   <div class="col">
-				       <input type="text" name="grade" id="phgrade" disabled>
+				       <input type="Number"   class='getresult'>
 				   </div>
 			 </div>
 			 <div class="row mb-3 mt-3">
 			       <div class="col">Chemistry</div>
 				   <div class="col">
-				       <input type="text" name="score" oninput="
-					    var score= this.value;
-						  if(score>=70){
-						      document.getElementById('chgrade').value='A'
-						  }
-						  else if(score>=60&&score<=69){ document.getElementById('chgrade').value='B'}
-						  else if(score>=50&&score<60){ document.getElementById('chgrade').value='C'}
-						  else if(score>=45&&score<50){ document.getElementById('chgrade').value='D'}
-						  else if(score>=40&&score<=45){ document.getElementById('chgrade').value='E'}
-						  else{
-						      document.getElementById('chgrade').value='F'
-						  }"
-					   " class='getresult'>
+				       <input type="Number"  class="getresult">
 				   </div>
-				   <div class="col">
-				       <input type="text" name="grade" id="chgrade" disabled>
-				   </div>
-			 </div>
 			 <div class="row mb-3 mt-3">
 			       <div class="col">Biology</div>
 				   <div class="col">
-				       <input type="text" name="score" oninput="
-					    var score= this.value;
-						  if(score>=70){
-						      document.getElementById('biograde').value='A'
-						  }
-						  else if(score>=60&&score<=69){ document.getElementById('biograde').value='B'}
-						  else if(score>=50&&score<60){ document.getElementById('biograde').value='C'}
-						  else if(score>=45&&score<50){ document.getElementById('biograde').value='D'}
-						  else if(score>=40&&score<=45){ document.getElementById('biograde').value='E'}
-						  else{
-						      document.getElementById('biograde').value='F'
-						  }"
-					   " class='getresult'>
-				   </div>
-				   <div class="col">
-				       <input type="text" name="grade" id="biograde" disabled>
-				   </div>
+				       <input type="Number"  class='getresult' id='stub'>
+			       </div>	   
 			 </div>
 			 <div class="row">
 			    <div class="col">
@@ -139,22 +70,14 @@
 				</div>
 			 </div>
 			 <div class="row mb-3 mt-3">
-			    <div class="col-4">
+			    <div class="col">
 				  <p>TOTAL</p>
 				</div>
-				<div class="col-4">
+				<div class="col">
 				    <p id="tot"></p>
 				</div>
 			  </div>
-			  <div class="row mb-t mt-3">
-			      <div class="col-4"><p>Average</p></div>
-				  <div class="col-4"><p id="aver"></p></div>
-			  </div>
-			  <div class="row mb-t mt-3" id="remark">
-			      <div class="col-4"><p>Remarks</p></div>
-				  <div class="col-4"><p id="mark"></p></div>
-				  
-			  </div>
+			  
 		</div>
 		<script type="text/javascript">
 		     function mat(){ 
@@ -164,10 +87,16 @@
 			    var ph= res[2].value;    
 				 var ch= res[3].value;
 				  var bio= res[4].value;
-				  var tot=Number(mat)+Number(eng)+Number(ph)+Number(ch)+Number(bio);
-			  document.getElementById('tot').innerHTML=tot;
+                    			
+			 if(mat==''||eng==''||ph==''||ch==''||bio==''){
+				  alert('Please fill in all the test scores')}
+				  else if(mat.type=='text'||eng.type=='text'||ph.type=='text'||ch.type=='text'||bio.type=='text')
+				  {alert('Please enter a score not a letter')}
+				  else if((mat>100||mat<0)||(eng>100||eng<0)||(ph>100||ph<0)||(ch>100||ch<0)||(bio>100||bio<0))
+				  {alert('The score range is between 0-100')}
+			  else {var tot=Number(mat)+Number(eng)+Number(ph)+Number(ch)+Number(bio);
+			  document.getElementById('tot').innerHTML=tot;}
 			  }
-			 
 		      /* function result(){
 			      var math=parseFloat(document.getElementsByClassName('getresult').value)
 				  var eng=parseFloat(document.getElementsByClassName('getresult').value)
